@@ -3544,3 +3544,8 @@ img.ui-datepicker-trigger {
 .ie8 .widget_woo_blogauthorinfo .avatar {
   width: auto;
 }
+
+/* mycss */
+.imageFeature{
+	margin: 0 auto;
+}
