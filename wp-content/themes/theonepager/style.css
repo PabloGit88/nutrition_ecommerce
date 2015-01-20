@@ -2710,6 +2710,7 @@ h3.archive_year {
 .flexslider .slides img {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
 .flex-pauseplay span {
   text-transform: capitalize;
