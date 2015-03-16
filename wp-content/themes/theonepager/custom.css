@@ -26,6 +26,7 @@ Add styles inside the media query below that you only want to be applied to the 
 #header{
 	background-size:cover;
 	background-position: center center;
+ 	height: 165px;
 }
 #footer #copyright {
 margin-top: 84px;
@@ -40,4 +41,7 @@ clear: both;
 .page-numbers li {
 float: left;
 padding: 8px;
+}
+body.has-top-nav #header {
+  height: 160px;
 }
