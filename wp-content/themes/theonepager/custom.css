@@ -23,3 +23,21 @@ Add styles inside the media query below that you only want to be applied to the 
 @media only screen and (min-width: 768px) {
 	/* Desktop styles go here */
 }
+#header{
+	background-size:cover;
+	background-position: center center;
+}
+#footer #copyright {
+margin-top: 84px;
+text-align: center;
+}
+ul.page-numbers {
+list-style: none;
+}
+nav.woocommerce-pagination {
+clear: both;
+}
+.page-numbers li {
+float: left;
+padding: 8px;
+}
