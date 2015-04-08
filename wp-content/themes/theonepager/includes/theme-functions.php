@@ -261,7 +261,7 @@ if (!function_exists( 'woo_subscribe_connect')) {
 		   		<a href="<?php echo esc_url( $settings['connect_linkedin'] ); ?>" class="linkedin" title="LinkedIn"></a>
 
 		   		<?php } if ( $settings['connect_delicious' ] != "" ) { ?>
-		   		<a href="<?php echo esc_url( $settings['connect_delicious'] ); ?>" class="delicious" title="Delicious"></a>
+		   		<a href="<?php echo esc_url( $settings['connect_delicious'] ); ?>" class="pinterest" title="Pinterest"><img src="images/logo-pinterest.png"></a>
 
 		   		<?php } if ( $settings['connect_googleplus' ] != "" ) { ?>
 		   		<a href="<?php echo esc_url( $settings['connect_googleplus'] ); ?>" class="googleplus" title="Google+"></a>
@@ -749,7 +749,9 @@ function woo_display_social_icons () {
 	foreach ( $social_icons as $k => $v ) {
 		$class = $k;
 		if ( 'rss' == $k ) { $class = 'subscribe'; }
-		if ( '' != $settings['connect_' . $k] ) {
+		if (strpos($settings['connect_' . $k],'pinterest') !== false) {
+			$html .= '<a href="' . esc_url( $settings['connect_' . $k] ) . '" title="' . esc_attr( $v ) . '" class="pinterest" target="_blank"><img src="'.get_template_directory_uri().'/images/logo-pinterest.png"></a>' . "\n";
+		}else if ( '' != $settings['connect_' . $k] ) {
 			$html .= '<a href="' . esc_url( $settings['connect_' . $k] ) . '" title="' . esc_attr( $v ) . '" class="' . $class . '"><span>' . $v . '</span></a>' . "\n";
 		}
 	}
