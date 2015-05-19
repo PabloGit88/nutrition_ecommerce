@@ -30,9 +30,9 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 
     <div class="col-full">
 
-    	<span class="heading"><?php echo esc_html( $settings['homepage_contact_area_heading'] ); ?></span>
+    	<span class="widget-title"><?php echo esc_html( $settings['homepage_contact_area_heading'] ); ?></span>
 
-		<h2 class="widget-title"><?php echo esc_html( $settings['homepage_contact_area_title'] ); ?></h2>
+		<h2 class="heading"><?php echo esc_html( $settings['homepage_contact_area_title'] ); ?></h2>
     	<?php
             if ( 'true' == $settings['homepage_enable_social'] ) {
                woo_display_social_icons();
