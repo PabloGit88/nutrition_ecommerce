@@ -136,7 +136,13 @@ jQuery(document).ready(function() {
         	        		<header>
         	        			<h1><?php the_title(); ?></h1>
         	        		</header>
-
+							<div id="connect">
+								<div class="social">
+									<a href="http://54.186.192.219/feed/" title="Subscribe to our RSS feed" class="subscribe"><span>Subscribe to our RSS feed</span></a>
+									<a href="https://www.facebook.com/fittednutrition?fref=ts" title="Like                                                                            on Facebook" class="facebook"><span>Like                                                                            on Facebook</span></a>
+									<a href="https://www.pinterest.com/Fittedpr/" title="Follow                                                                            on Delicious" class="pinterest" target="_blank"><img src="http://54.186.192.219/wp-content/themes/theonepager/images/logo-pinterest.png"></a>
+								</div>
+							</div>
         	                <section class="entry">
 	    	                    <?php the_content(); ?>
 
