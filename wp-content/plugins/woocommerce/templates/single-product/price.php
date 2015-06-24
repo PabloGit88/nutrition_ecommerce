@@ -16,7 +16,7 @@ global $product;
 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 
 	<p class="price"><?php echo $product->get_price_html(); ?></p>
-	<img class="included" src="<?php echo get_site_url(); ?>/wp-content/uploads/arte-shipping-included-1.png">
+	<img class="included" src="<?php echo get_site_url(); ?>/wp-content/uploads/arte-shipping-included.png">
 	
 	<meta itemprop="price" content="<?php echo $product->get_price(); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo get_woocommerce_currency(); ?>" />
