@@ -57,6 +57,20 @@ function change_default_checkout_state() {
 	return 'PR'; // state code
 }
 
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function custom_override_checkout_fields( $fields ) {
+	$fields['billing']['billing_state_custom'] = array(
+			'label'     => __('Province', 'woocommerce'),
+			'placeholder'   => _x('Province', 'placeholder', 'woocommerce'),
+			'required'  => false,
+			'class'     => array('form-row-wide'),
+			'clear'     => true
+	);
+
+	return $fields;
+}
 
 
 
