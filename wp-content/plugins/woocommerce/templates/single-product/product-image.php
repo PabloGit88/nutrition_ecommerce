@@ -12,8 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $woocommerce, $product;
 ?>
 <div class="images">
-	<?php 
-$path = get_home_path(); ?>
 	<?php
 		if ( has_post_thumbnail() ) {
 
