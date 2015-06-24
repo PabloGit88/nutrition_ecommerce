@@ -246,7 +246,7 @@ return array(
 	'UA' => __( 'Ukraine', 'woocommerce' ),
 	'AE' => __( 'United Arab Emirates', 'woocommerce' ),
 	'GB' => __( 'United Kingdom (UK)', 'woocommerce' ),
-	'US' => __( 'United States (US)', 'woocommerce' ),
+	'US' => __( 'Puerto Rico', 'woocommerce' ),
 	'UY' => __( 'Uruguay', 'woocommerce' ),
 	'UZ' => __( 'Uzbekistan', 'woocommerce' ),
 	'VU' => __( 'Vanuatu', 'woocommerce' ),
