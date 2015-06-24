@@ -82,8 +82,8 @@ function order_fields($fields) {
 			"billing_company",
 			"billing_address_1",
 			"billing_address_2",
-			"billing_postcode",
 			"billing_state_custom",
+			"billing_postcode",
 			"billing_email",
 			"billing_phone"
 
