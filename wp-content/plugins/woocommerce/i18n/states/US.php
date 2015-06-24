@@ -10,7 +10,7 @@
 global $states;
 
 $states['US'] = array(
-	'AL' => __( 'Alabama', 'woocommerce' ),
+	/*'AL' => __( 'Alabama', 'woocommerce' ),
 	'AK' => __( 'Alaska', 'woocommerce' ),
 	'AZ' => __( 'Arizona', 'woocommerce' ),
 	'AR' => __( 'Arkansas', 'woocommerce' ),
@@ -66,8 +66,8 @@ $states['US'] = array(
 	'AP' => __( 'Armed Forces (AP)', 'woocommerce' ),
 	'AS' => __( 'American Samoa', 'woocommerce' ),
 	'GU' => __( 'Guam', 'woocommerce' ),
-	'MP' => __( 'Northern Mariana Islands', 'woocommerce' ),
+	'MP' => __( 'Northern Mariana Islands', 'woocommerce' ),*/
 	'PR' => __( 'Puerto Rico', 'woocommerce' ),
-	'UM' => __( 'US Minor Outlying Islands', 'woocommerce' ),
-	'VI' => __( 'US Virgin Islands', 'woocommerce' ),
+	/*'UM' => __( 'US Minor Outlying Islands', 'woocommerce' ),
+	'VI' => __( 'US Virgin Islands', 'woocommerce' ),*/
 );
