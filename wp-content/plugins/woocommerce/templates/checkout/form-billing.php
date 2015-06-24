@@ -22,25 +22,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
 
-<?php 
-// order the keys for your custom ordering or delete the ones you don't need
-$mybillingfields=array(
-    "billing_first_name",
-    "billing_last_name",
-    "billing_company",
-    "billing_address_1",
-    "billing_address_2",
-    "billing_city",
-    "billing_state",
-	"billing_state_custom"
-    "billing_postcode",
-    "billing_country",
-    "billing_email",
-    "billing_phone",
-);
-foreach ($mybillingfields as $key) : ?>
-<?php woocommerce_form_field( $key, $checkout->checkout_fields['billing'][$key], $checkout->get_value( $key ) ); ?>
-<?php endforeach; ?>
+	<?php foreach ( $checkout->checkout_fields['billing'] as $key => $field ) : ?>
+
+		<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+
+	<?php endforeach; ?>
 
 	<?php do_action('woocommerce_after_checkout_billing_form', $checkout ); ?>
 

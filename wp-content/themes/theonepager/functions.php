@@ -71,7 +71,32 @@ function custom_override_checkout_fields( $fields ) {
 
 	return $fields;
 }
+add_filter("woocommerce_checkout_fields", "order_fields");
 
+function order_fields($fields) {
+
+	$order = array(
+			"billing_first_name",
+			"billing_last_name",
+			"billing_company",
+			"billing_address_1",
+			"billing_address_2",
+			"billing_postcode",
+			"billing_country",
+			"billing_state_custom",
+			"billing_email",
+			"billing_phone"
+
+	);
+	foreach($order as $field)
+	{
+		$ordered_fields[$field] = $fields["billing"][$field];
+	}
+
+	$fields["billing"] = $ordered_fields;
+	return $fields;
+
+}
 
 
 
