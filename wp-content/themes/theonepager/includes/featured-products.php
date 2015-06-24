@@ -24,7 +24,7 @@
 <section id="home-shop home-shop-2" class="widget_woo_component woocommerce-columns-3 fix">
 
 	<div class="col-full">		
-		<h2 class="widget-title">Nuestros Platos</h2>		
+		<h2 class="widget-title">Especiales de la semana</h2>		
 				
 		<ul class="products">
 			<li class="post-283 product type-product status-publish has-post-thumbnail first featured shipping-taxable purchasable product-type-simple instock">	
