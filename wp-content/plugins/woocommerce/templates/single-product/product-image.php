@@ -12,8 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $woocommerce, $product;
 ?>
 <div class="images">
-<?php echo get_site_url(); ?>
-	<img class="included" src="<?php echo ABSPATH; ?>wp-content/uploads/arte-shipping-included-2.png">
+
+	<img class="included" src="<?php echo get_site_url(); ?>wp-content/uploads/arte-shipping-included-2.png">
 	<?php
 		if ( has_post_thumbnail() ) {
 
