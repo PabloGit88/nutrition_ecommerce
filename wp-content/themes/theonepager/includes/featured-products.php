@@ -21,7 +21,7 @@
 	$settings = woo_get_dynamic_values( $settings );
 	
 ?>
-<section id="home-shop home-shop-2" class="widget_woo_component woocommerce-columns-3 fix">
+<section id="home-shop-2" class="widget_woo_component woocommerce-columns-3 fix">
 
 	<div class="col-full">		
 		<h2 class="widget-title">Especiales de la semana</h2>		
