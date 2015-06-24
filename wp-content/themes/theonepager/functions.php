@@ -41,7 +41,21 @@ if ( is_woocommerce_activated() ) {
 // Display 24 products per page. Goes in functions.php
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 15;' ), 20 );
 
+/**
+ * Manipulate default state and countries
+ *
+ * As always, code goes in your theme functions.php file
+ */
+add_filter( 'default_checkout_country', 'change_default_checkout_country' );
+add_filter( 'default_checkout_state', 'change_default_checkout_state' );
 
+function change_default_checkout_country() {
+	return 'US'; // country code
+}
+
+function change_default_checkout_state() {
+	return 'PR'; // state code
+}
 
 
 
