@@ -64,8 +64,8 @@ function custom_override_checkout_fields( $fields ) {
 	$fields['billing']['billing_state_custom'] = array(
 			'label'     => __('Province', 'woocommerce'),
 			'placeholder'   => _x('Province', 'placeholder', 'woocommerce'),
-			'required'  => false,
-			'class'     => array('form-row-wide'),
+			'required'  => true,
+			'class'     => array('form-row-first'),
 			'clear'     => true
 	);
 
