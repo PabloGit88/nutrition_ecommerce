@@ -10,10 +10,10 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $post, $woocommerce, $product;
-$path = get_home_path();
 ?>
 <div class="images">
-	<?php echo $path; ?>
+	<?php 
+$path = get_home_path(); ?>
 	<img class="included" src="<?php echo $path; ?>/wp-content-uploads/arte-shipping-included-2.png">< 
 	<?php
 		if ( has_post_thumbnail() ) {
