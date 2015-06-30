@@ -53,5 +53,5 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 	<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 
 </form>
-
+<p>Para procesar su pago por teléfono puede llamar al 787-698-1100</p>
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
